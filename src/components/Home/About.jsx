@@ -37,20 +37,20 @@ function About() {
   }, []);
 
   const typingSteps = [
-    "Hi, I'm Harry Ashton a Front-end Developer who loves making great UI 💻",
+    "Hi, I'm Alan Hernandez a Front-end Developer who loves making great UI 💻",
     100, // Adjust this delay to slow down the typing effect
   ];
 
   return (
-    <div 
-      className="about pt-40" 
-      data-scroll-index="1" 
+    <div
+      className="about pt-40"
+      data-scroll-index="1"
       id="about"
       style={{
-        paddingTop: 'clamp(40px, 6vw, 100px)',
-        paddingBottom: 'clamp(30px, 5vw, 80px)',
-        paddingLeft: 'clamp(20px, 4vw, 40px)',
-        paddingRight: 'clamp(20px, 4vw, 40px)'
+        paddingTop: "clamp(40px, 6vw, 100px)",
+        paddingBottom: "clamp(30px, 5vw, 80px)",
+        paddingLeft: "clamp(20px, 4vw, 40px)",
+        paddingRight: "clamp(20px, 4vw, 40px)",
       }}
     >
       <motion.div
@@ -62,10 +62,13 @@ function About() {
       >
         <DotsPattern />
       </motion.div>
-      <div className={"min-h-[300px]"} style={{ 
-        minHeight: 'clamp(150px, 30vw, 300px)', 
-        marginBottom: 'clamp(20px, 3vw, 40px)'
-      }}>
+      <div
+        className={"min-h-[300px]"}
+        style={{
+          minHeight: "clamp(150px, 30vw, 300px)",
+          marginBottom: "clamp(20px, 3vw, 40px)",
+        }}
+      >
         {showH1 && (
           <motion.div
             custom={1}
@@ -74,16 +77,16 @@ function About() {
             variants={fadeInVariants}
             className="flex flex-wrap cont"
             style={{
-              justifyContent: 'center'
+              justifyContent: "center",
             }}
           >
-            <h1 
+            <h1
               className="text-5xl leading-[60px] md:text-6xl md:leading-[80px] about-hero-title"
               style={{
-                fontSize: 'clamp(36px, 8vw, 60px)',
-                lineHeight: 'clamp(44px, 9vw, 80px)',
-                marginBottom: 'clamp(16px, 2vw, 30px)',
-                width: '100%'
+                fontSize: "clamp(36px, 8vw, 60px)",
+                lineHeight: "clamp(44px, 9vw, 80px)",
+                marginBottom: "clamp(16px, 2vw, 30px)",
+                width: "100%",
               }}
             >
               {startTyping && (
@@ -104,15 +107,15 @@ function About() {
         animate="visible"
         variants={fadeInVariants}
         className="stauts mt-10 about-button-container"
-        style={{ 
-          marginTop: 'clamp(16px, 2vw, 40px)', 
-          marginBottom: 'clamp(24px, 4vw, 80px)'
+        style={{
+          marginTop: "clamp(16px, 2vw, 40px)",
+          marginBottom: "clamp(24px, 4vw, 80px)",
         }}
       >
         <div className="d-flex align-items-center">
           <div className="butn-presv">
             <a
-              href="https://docs.google.com/document/d/1SQhtLuJFWIptV0QlPWVqHcq4QG0aqakm/edit?usp=sharing&ouid=112810716278450038881&rtpof=true&sd=true"
+              href="/Alan_Hernandez_Resume_2026.pdf"
               target="_blank"
               rel="noopener noreferrer"
               className="butn butn-md butn-bord radius-5 skew !border-orange-500 text-xl"
@@ -128,8 +131,8 @@ function About() {
         animate="visible"
         variants={fadeInVariants}
         className="text mt-80 about-text-section"
-        style={{ 
-          marginTop: 'clamp(30px, 6vw, 80px)'
+        style={{
+          marginTop: "clamp(30px, 6vw, 80px)",
         }}
       >
         <motion.h6
@@ -138,7 +141,7 @@ function About() {
           animate="visible"
           variants={fadeInVariants}
           className="sub-title mb-15 about-me-subtitle"
-          style={{ marginBottom: '12px' }}
+          style={{ marginBottom: "12px" }}
         >
           About Me.
         </motion.h6>
@@ -148,7 +151,7 @@ function About() {
           animate="visible"
           variants={fadeInVariants}
           className="fz-20"
-          style={{ fontSize: 'clamp(16px, 3vw, 20px)', lineHeight: '1.6' }}
+          style={{ fontSize: "clamp(16px, 3vw, 20px)", lineHeight: "1.6" }}
         >
           {data.brief}
         </motion.p>

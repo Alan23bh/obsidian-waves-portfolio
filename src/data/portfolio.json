@@ -8,10 +8,23 @@
   },
   {
     "id": 2,
-    "image": "/assets/imgs/works/apple-product-flow.png",
-    "title": "Apple product purchase flow",
+    "image": "/assets/imgs/works/next-shop.png",
+    "title": "Atlas Grooming – E-Commerce Store",
     "tag": "E-Commerce UI",
-    "href": "/project/apple-product-flow"
-
+    "href": "/project/atlas-grooming"
+  },
+  {
+    "id": 3,
+    "image": "/assets/imgs/works/angular-dash.jpeg",
+    "title": "Teacher Dashboard",
+    "tag": "Analytics UI",
+    "href": "/project/teacher-dashboard"
+  },
+  {
+    "id": 4,
+    "image": "/assets/imgs/works/bitarosa-img.jpeg",
+    "title": "BitaRosa.com",
+    "tag": "E-Commerce UI",
+    "href": "/project/bitarosa"
   }
 ]

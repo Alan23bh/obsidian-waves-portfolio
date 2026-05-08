@@ -94,9 +94,19 @@ function Navbar() {
           variants={fadeInVariants}
           className="logo"
           href="/"
-          style={{ width: "175px" }}
+          style={{
+            color: "#fff",
+            fontSize: "28px",
+            fontWeight: 700,
+            letterSpacing: "-1px",
+            textDecoration: "none",
+            display: "inline-block",
+            lineHeight: 1,
+            whiteSpace: "nowrap",
+          }}
         >
-          <img src="/assets/imgs/logo-light.png" alt="logo" />
+          {/* <img src="/assets/imgs/logo-light.png" alt="logo" /> */}
+          Alan Hernandez
         </motion.a>
         <div
           className={`collapse navbar-collapse justify-content-center ${
@@ -148,7 +158,7 @@ function Navbar() {
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
-            href="https://github.com/thehashton"
+            href="https://github.com/Alan23bh"
             className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
             target="_blank"
             rel="noopener noreferrer"
@@ -160,7 +170,7 @@ function Navbar() {
             initial="hidden"
             animate="visible"
             variants={fadeInVariants}
-            href="https://www.linkedin.com/in/harry-ashton-b0b15b30/"
+            href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
             className="text-white text-4xl hover:opacity-35 transition-opacity duration-300"
             target="_blank"
             rel="noopener noreferrer"

@@ -17,9 +17,9 @@ import Contact from "@/components/Home/Contact";
 import Footer from "@/components/Common/Footer";
 
 export const metadata = {
-  title: "Harry Ashton - Frontend developer",
+  title: "Alan Hernandez - Frontend developer",
   description:
-    "Webmaster Harry Ashton bringing the thunder with HTML, CSS, JS and React",
+    "Webmaster Alan Hernandez bringing the thunder with HTML, CSS, JS and React",
   icons: {
     icon: "/assets/imgs/favicon.ico",
     shortcut: "/assets/imgs/favicon.ico",

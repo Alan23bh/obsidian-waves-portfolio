@@ -21,7 +21,11 @@ function Contact() {
   const [startTyping, setStartTyping] = useState(false);
   const [showElements, setShowElements] = useState(false);
   const [isSubmitting, setIsSubmitting] = useState(false);
-  const [toast, setToast] = useState({ isVisible: false, message: "", type: "success" });
+  const [toast, setToast] = useState({
+    isVisible: false,
+    message: "",
+    type: "success",
+  });
 
   useEffect(() => {
     const observer = new IntersectionObserver(
@@ -117,26 +121,47 @@ function Contact() {
       data-scroll-index="6"
       id="contact"
       style={{
-        paddingTop: '40px',
-        paddingBottom: '40px',
-        width: '100%'
+        paddingTop: "40px",
+        paddingBottom: "40px",
+        width: "100%",
       }}
     >
-      <div className="container" style={{ 
-        paddingLeft: '20px', 
-        paddingRight: '20px',
-        maxWidth: '100%',
-        width: '100%'
-      }}>
-        <div className="row" style={{ margin: 0, width: '100%' }}>
-          <div className="col-lg-6 col-12 contact-item" style={{ 
-            paddingLeft: '0', 
-            paddingRight: '15px',
-            marginBottom: '30px'
-          }}>
-            <div className="sec-head md-mb80" style={{ marginBottom: '24px' }}>
-              <h6 className="dot-titl mb-10" style={{ fontSize: 'clamp(14px, 2vw, 16px)', marginBottom: '8px' }}>Get In Touch</h6>
-              <h2 className="fz-50" style={{ fontSize: 'clamp(28px, 6vw, 50px)', lineHeight: '1.2', marginBottom: '16px' }}>
+      <div
+        className="container"
+        style={{
+          paddingLeft: "20px",
+          paddingRight: "20px",
+          maxWidth: "100%",
+          width: "100%",
+        }}
+      >
+        <div className="row" style={{ margin: 0, width: "100%" }}>
+          <div
+            className="col-lg-6 col-12 contact-item"
+            style={{
+              paddingLeft: "0",
+              paddingRight: "15px",
+              marginBottom: "30px",
+            }}
+          >
+            <div className="sec-head md-mb80" style={{ marginBottom: "24px" }}>
+              <h6
+                className="dot-titl mb-10"
+                style={{
+                  fontSize: "clamp(14px, 2vw, 16px)",
+                  marginBottom: "8px",
+                }}
+              >
+                Get In Touch
+              </h6>
+              <h2
+                className="fz-50"
+                style={{
+                  fontSize: "clamp(28px, 6vw, 50px)",
+                  lineHeight: "1.2",
+                  marginBottom: "16px",
+                }}
+              >
                 {startTyping && (
                   <Typical
                     steps={typingSteps}
@@ -153,100 +178,122 @@ function Contact() {
                   animate="visible"
                   variants={fadeInVariants}
                 >
-                  <p className="fz-15 mt-10" style={{ fontSize: 'clamp(14px, 2vw, 15px)', lineHeight: '1.5', marginTop: '12px', marginBottom: '16px' }}>
+                  <p
+                    className="fz-15 mt-10"
+                    style={{
+                      fontSize: "clamp(14px, 2vw, 15px)",
+                      lineHeight: "1.5",
+                      marginTop: "12px",
+                      marginBottom: "16px",
+                    }}
+                  >
                     If you would like to work with us or just want to get in
                     touch, we'd love to hear from you!
                   </p>
-                  <div className="phone fz-30 fw-600 mt-30 underline" style={{ fontSize: 'clamp(20px, 4vw, 30px)', marginTop: '16px', marginBottom: '20px' }}>
-                    <a href="#0" className="main-color" style={{ textDecoration: 'underline' }}>
-                      +1 840 841 25 69
+                  <div
+                    className="phone fz-30 fw-600 mt-30 underline"
+                    style={{
+                      fontSize: "clamp(20px, 4vw, 30px)",
+                      marginTop: "16px",
+                      marginBottom: "20px",
+                    }}
+                  >
+                    <a
+                      href="#0"
+                      className="main-color"
+                      style={{ textDecoration: "underline" }}
+                    >
+                      407 - 212 - 6090
                     </a>
                   </div>
-                  <ul className="rest social-text d-flex mt-60" style={{ 
-                    listStyle: 'none', 
-                    padding: 0,
-                    gap: '16px',
-                    flexWrap: 'wrap',
-                    marginTop: '20px',
-                    width: '100%'
-                  }}>
+                  <ul
+                    className="rest social-text d-flex mt-60"
+                    style={{
+                      listStyle: "none",
+                      padding: 0,
+                      gap: "16px",
+                      flexWrap: "wrap",
+                      marginTop: "20px",
+                      width: "100%",
+                    }}
+                  >
                     <li style={{ margin: 0 }}>
-                      <a 
-                        href="https://github.com/thehashton" 
+                      <a
+                        href="https://github.com/Alan23bh"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover-this"
                         title="GitHub"
                         aria-label="GitHub"
-                        style={{ 
-                          fontSize: 'clamp(40px, 8vw, 48px)', 
-                          color: 'white',
-                          textDecoration: 'none',
-                          transition: 'opacity 0.3s',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          minWidth: '56px',
-                          minHeight: '56px',
-                          width: '56px',
-                          height: '56px'
+                        style={{
+                          fontSize: "clamp(40px, 8vw, 48px)",
+                          color: "white",
+                          textDecoration: "none",
+                          transition: "opacity 0.3s",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          minWidth: "56px",
+                          minHeight: "56px",
+                          width: "56px",
+                          height: "56px",
                         }}
-                        onMouseEnter={(e) => e.target.style.opacity = '0.7'}
-                        onMouseLeave={(e) => e.target.style.opacity = '1'}
+                        onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+                        onMouseLeave={(e) => (e.target.style.opacity = "1")}
                       >
                         <i className="fab fa-github" aria-hidden="true"></i>
                       </a>
                     </li>
-                    <li style={{ margin: 0 }}>
-                      <a 
-                        href="https://www.twitter.com/thehashton" 
+                    {/* <li style={{ margin: 0 }}>
+                      <a
+                        href="https://www.twitter.com/thehashton"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover-this"
                         title="Twitter"
                         aria-label="Twitter"
-                        style={{ 
-                          fontSize: 'clamp(40px, 8vw, 48px)', 
-                          color: 'white',
-                          textDecoration: 'none',
-                          transition: 'opacity 0.3s',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          minWidth: '56px',
-                          minHeight: '56px',
-                          width: '56px',
-                          height: '56px'
+                        style={{
+                          fontSize: "clamp(40px, 8vw, 48px)",
+                          color: "white",
+                          textDecoration: "none",
+                          transition: "opacity 0.3s",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          minWidth: "56px",
+                          minHeight: "56px",
+                          width: "56px",
+                          height: "56px",
                         }}
-                        onMouseEnter={(e) => e.target.style.opacity = '0.7'}
-                        onMouseLeave={(e) => e.target.style.opacity = '1'}
+                        onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+                        onMouseLeave={(e) => (e.target.style.opacity = "1")}
                       >
                         <i className="fab fa-twitter" aria-hidden="true"></i>
                       </a>
-                    </li>
+                    </li> */}
                     <li style={{ margin: 0 }}>
-                      <a 
-                        href="https://www.linkedin.com/in/harry-ashton-b0b15b30/" 
+                      <a
+                        href="https://www.linkedin.com/in/alan-hernandez-aa8458326/"
                         target="_blank"
                         rel="noopener noreferrer"
                         className="hover-this"
                         title="LinkedIn"
                         aria-label="LinkedIn"
-                        style={{ 
-                          fontSize: 'clamp(40px, 8vw, 48px)', 
-                          color: 'white',
-                          textDecoration: 'none',
-                          transition: 'opacity 0.3s',
-                          display: 'flex',
-                          alignItems: 'center',
-                          justifyContent: 'center',
-                          minWidth: '56px',
-                          minHeight: '56px',
-                          width: '56px',
-                          height: '56px'
+                        style={{
+                          fontSize: "clamp(40px, 8vw, 48px)",
+                          color: "white",
+                          textDecoration: "none",
+                          transition: "opacity 0.3s",
+                          display: "flex",
+                          alignItems: "center",
+                          justifyContent: "center",
+                          minWidth: "56px",
+                          minHeight: "56px",
+                          width: "56px",
+                          height: "56px",
                         }}
-                        onMouseEnter={(e) => e.target.style.opacity = '0.7'}
-                        onMouseLeave={(e) => e.target.style.opacity = '1'}
+                        onMouseEnter={(e) => (e.target.style.opacity = "0.7")}
+                        onMouseLeave={(e) => (e.target.style.opacity = "1")}
                       >
                         <i className="fab fa-linkedin" aria-hidden="true"></i>
                       </a>
@@ -260,8 +307,8 @@ function Contact() {
             <motion.div
               className="col-lg-6 col-12 contact-item"
               style={{
-                paddingLeft: '15px',
-                paddingRight: '0'
+                paddingLeft: "15px",
+                paddingRight: "0",
               }}
               initial="hidden"
               animate="visible"
@@ -271,9 +318,18 @@ function Contact() {
               <div className="full-width">
                 <form id="contact-form" onSubmit={handleSubmit}>
                   <div className="messages"></div>
-                  <div className="controls row" style={{ marginLeft: 0, marginRight: 0 }}>
-                    <div className="col-lg-6 col-12" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                      <div className="form-group mb-30" style={{ marginBottom: '20px' }}>
+                  <div
+                    className="controls row"
+                    style={{ marginLeft: 0, marginRight: 0 }}
+                  >
+                    <div
+                      className="col-lg-6 col-12"
+                      style={{ paddingLeft: 0, paddingRight: 0 }}
+                    >
+                      <div
+                        className="form-group mb-30"
+                        style={{ marginBottom: "20px" }}
+                      >
                         <input
                           id="form_name"
                           type="text"
@@ -281,15 +337,21 @@ function Contact() {
                           placeholder="Name"
                           required="required"
                           style={{
-                            width: '100%',
-                            padding: '12px 15px',
-                            fontSize: '16px'
+                            width: "100%",
+                            padding: "12px 15px",
+                            fontSize: "16px",
                           }}
                         />
                       </div>
                     </div>
-                    <div className="col-lg-6 col-12" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                      <div className="form-group mb-30" style={{ marginBottom: '20px' }}>
+                    <div
+                      className="col-lg-6 col-12"
+                      style={{ paddingLeft: 0, paddingRight: 0 }}
+                    >
+                      <div
+                        className="form-group mb-30"
+                        style={{ marginBottom: "20px" }}
+                      >
                         <input
                           id="form_email"
                           type="email"
@@ -297,30 +359,42 @@ function Contact() {
                           placeholder="Email"
                           required="required"
                           style={{
-                            width: '100%',
-                            padding: '12px 15px',
-                            fontSize: '16px'
+                            width: "100%",
+                            padding: "12px 15px",
+                            fontSize: "16px",
                           }}
                         />
                       </div>
                     </div>
-                    <div className="col-12" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                      <div className="form-group mb-30" style={{ marginBottom: '20px' }}>
+                    <div
+                      className="col-12"
+                      style={{ paddingLeft: 0, paddingRight: 0 }}
+                    >
+                      <div
+                        className="form-group mb-30"
+                        style={{ marginBottom: "20px" }}
+                      >
                         <input
                           id="form_subject"
                           type="text"
                           name="subject"
                           placeholder="Subject"
                           style={{
-                            width: '100%',
-                            padding: '12px 15px',
-                            fontSize: '16px'
+                            width: "100%",
+                            padding: "12px 15px",
+                            fontSize: "16px",
                           }}
                         />
                       </div>
                     </div>
-                    <div className="col-12" style={{ paddingLeft: 0, paddingRight: 0 }}>
-                      <div className="form-group" style={{ marginBottom: '20px' }}>
+                    <div
+                      className="col-12"
+                      style={{ paddingLeft: 0, paddingRight: 0 }}
+                    >
+                      <div
+                        className="form-group"
+                        style={{ marginBottom: "20px" }}
+                      >
                         <textarea
                           id="form_message"
                           name="message"
@@ -328,14 +402,14 @@ function Contact() {
                           rows="4"
                           required="required"
                           style={{
-                            width: '100%',
-                            padding: '12px 15px',
-                            fontSize: '16px',
-                            minHeight: '120px'
+                            width: "100%",
+                            padding: "12px 15px",
+                            fontSize: "16px",
+                            minHeight: "120px",
                           }}
                         ></textarea>
                       </div>
-                      <div className="mt-30" style={{ marginTop: '20px' }}>
+                      <div className="mt-30" style={{ marginTop: "20px" }}>
                         <button type="submit" disabled={isSubmitting}>
                           <span className="text">
                             {isSubmitting ? "Sending..." : "Send A Message"}

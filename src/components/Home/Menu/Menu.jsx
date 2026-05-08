@@ -58,11 +58,12 @@ const Menu = () => {
         <div className="nav__content">
           {navActive && (
             <div className="nav__signature">
-              <img 
+              {/* <img 
                 src="/assets/imgs/harryashton_signature.png" 
                 alt="Signature" 
                 className="signature-img"
-              />
+              /> */}
+              <span className="signature-text">Alan Hernandez</span>
             </div>
           )}
           <ul className="nav__list">

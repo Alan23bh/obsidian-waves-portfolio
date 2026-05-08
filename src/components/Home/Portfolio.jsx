@@ -66,7 +66,17 @@ function Portfolio() {
                 <div className="img">
                   {item.href ? (
                     <Link href={item.href}>
-                      <img src={item.image} alt="" className="radius-5" />
+                      <img
+                        src={item.image}
+                        alt={item.title}
+                        className="radius-5"
+                        style={{
+                          width: "100%",
+                          aspectRatio: "16 / 9",
+                          objectFit: "cover",
+                          display: "block",
+                        }}
+                      />
                     </Link>
                   ) : (
                     <img src={item.image} alt="" className="radius-5" />

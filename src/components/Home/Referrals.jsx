@@ -145,12 +145,29 @@ function Referrals() {
                         animate={controls}
                         variants={fadeInVariants}
                         custom={index}
+                        style={{
+                          minHeight: "620px",
+                          display: "flex",
+                          flexDirection: "column",
+                          justifyContent: "space-between",
+                        }}
                       >
                         <div className="cont mb-30">
                           <div className="d-flex align-items-center">
                             <div>
                               <div className="img">
-                                <img src={item.picture} alt="" />
+                                <img
+                                  src={item.picture}
+                                  alt={item.name}
+                                  style={{
+                                    width: "3rem",
+                                    height: "3rem",
+                                    borderRadius: "50%",
+                                    objectFit: "cover",
+                                    display: "block",
+                                    marginLeft: "6px",
+                                  }}
+                                />
                               </div>
                             </div>
                             <div className="ml-30">

@@ -2,18 +2,18 @@
   "testimonials": [
     {
       "id": 1,
-      "picture": "/assets/imgs/testim/1.jpg",
-      "name": "Rob Pike",
+      "picture": "/assets/imgs/testim/harry.png",
+      "name": "Harry Ashton",
       "position": "Senior Developer",
-      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "text": "I've worked with Alan for quite a while now mentoring him on how to become a stronger Developer. Right off the top he's someone who has incredible self-discipline, focus and problem solving skills. He likes to take full ownership of problems from start to finish and has adapted really well to FrontEnd development. He takes feedback really well and he works very diligently after being told just once what needs to be done. For me, that would be a great asset as a developer going into any team and I couldn't recommend Alan enough! Fantastic talent and very hard working. It's been a pleasure working with him",
       "reviews": 71
     },
     {
       "id": 2,
-      "picture": "/assets/imgs/testim/2.jpg",
-      "name": "Alan Turing",
-      "position": "Senior Developer",
-      "text": "Harry is a fantastic developer to work with and it was a great experience working alongside him. Very motivated and eager to push the project forward.",
+      "picture": "/assets/imgs/testim/alba-pic1.png",
+      "name": "Alba Bita",
+      "position": "Small Business Owner",
+      "text": "I want to give a huge thank you to Alan Hernandez for creating an amazing website for my hair, nails, and event business. He truly exceeded my expectations! The site looks beautiful, professional, and perfectly captures my brand. Alan was patient, creative, and easy to work with throughout the entire process. I’m incredibly grateful for his dedication and talent, and I highly recommend him to anyone looking for high-quality web design services. If you want a customized website fit for you, contact him!",
       "reviews": 71
     },
     {

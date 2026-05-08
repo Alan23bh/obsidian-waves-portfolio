@@ -45,8 +45,11 @@ function Navbar() {
   return (
     <nav className="navbar navbar-expand-lg static">
       <div className="container">
-        <a className="logo icon-img-100" href="#">
+        {/* <a className="logo icon-img-100" href="#">
           <img src="/assets/imgs/logo-light.png" alt="logo" />
+        </a> */}
+        <a className="logo" href="#">
+          Alan Hernandez
         </a>
         <button
           className="navbar-toggler"
